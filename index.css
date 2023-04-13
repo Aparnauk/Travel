@@ -1,0 +1,685 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    font-family: 'Abril Fatface', cursive;
+}
+
+#navbar {
+    background-color: white;
+    
+}
+
+#navs {
+    font-size: 35px;
+    font-weight: 700;
+    color: black;
+    text-shadow: 0 2px 5px black;
+    margin-bottom: 5px;
+}
+
+#navs span {
+    color: chartreuse;
+}
+
+.navbar-toggler span {
+    color: chartreuse;
+}
+
+.navbar-nav {
+    margin-left: 20px;
+}
+
+.nav-item .nav-link {
+    font-size: 15px;
+    font-weight: 600;
+    color: black;
+    letter-spacing: 1px;
+    border-radius: 3px;
+    transition: 0 5s ease;
+}
+
+.nav-item .nav-link:hover {
+    background-color: chartreuse;
+    color: white;
+}
+
+.navbar form button {
+    background-color: chartreuse;
+    color: white;
+    border: none;
+}
+
+.navbar form button:hover {
+    background-color: black;
+    color: white;
+}
+
+.home {
+    width: 100%;
+    height: 650px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.004), rgba(0, 0, 0, 0.03)), url(./image/PARIS.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.home .content {
+    text-align: center;
+    padding-top: 200px;
+}
+
+.home .content h6 {
+    color: white;
+    font-size: 50px;
+    font-weight: 500;
+    text-shadow: 0 5px 4px black;
+}
+
+.home .content h1 {
+    color: white;
+    font-size: 70px;
+    font-weight: 650;
+    margin-top: 5px;
+    text-shadow: 0 5px 4px black;
+}
+
+.changecontent::after {
+    content: ' ';
+    color: chartreuse;
+    text-shadow: 0 1px 1px black;
+    animation: changetext 10s infinite linear;
+}
+
+@keyframes changetext {
+    0% {
+        content: "India";
+    }
+
+    10% {
+        content: "Spain";
+    }
+
+    20% {
+        content: "United State";
+    }
+
+    30% {
+        content: "China";
+    }
+
+    40% {
+        content: "France";
+    }
+
+    50% {
+        content: "Pakistan";
+    }
+
+    60% {
+        content: "Italy";
+    }
+
+    70% {
+        content: "Thurky";
+    }
+
+    80% {
+        content: "Mexico";
+    }
+
+    90% {
+        content: "Germany";
+    }
+
+    100% {
+        content: "United Kingdom";
+    }
+}
+
+.home .content p {
+    color: white;
+    font-size: 25px;
+    font-weight: 400;
+    margin-top: 5px;
+    margin-bottom: 30px;
+    text-shadow: 0 5px 4px black;
+}
+
+.home .content a {
+    padding: 10px;
+    background: white;
+    color: black;
+    letter-spacing: 2px;
+    font-weight: 500px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.home .content a:hover {
+    background-color: chartreuse;
+    color: white;
+}
+
+@media only screen and (max-width: 730px) {
+
+    .home .content h1 {
+        font-size: 60px;
+    }
+
+    .home {
+        background-position: 50%;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .home .content p {
+        font-size: 15px;
+    }
+
+    .home .content h1 {
+        font-size: 40px;
+    }
+
+    .home .content h6 {
+        font-size: 30px;
+    }
+}
+
+@media only screen and (max-width: 385px) {
+    .home .content p {
+        font-size: 12px;
+    }
+
+    .home .content h1 {
+        font-size: 30px;
+    }
+}
+
+
+
+
+.book {
+    background-color: white;
+    padding: 50px;
+    margin-top: 30px;
+}
+
+
+.main-text h1 {
+    text-align: center;
+    box-shadow: 0 1px 1px 1px black;
+    font-weight: 600px;
+    text-shadow: 0 2px 4px black;
+    background-image: url(https://www.dailymaverick.co.za/wp-content/uploads/2021/10/HEADER-PIC-Dugout-canoe-with-a-small-captainJPG-scaled.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding: 20px;
+
+}
+
+.main-text h1 span {
+    color: chartreuse;
+}
+
+.book form {
+    margin-top: 30px;
+}
+
+.book .card img {
+
+    box-shadow: 4px 10px 6px 12px black;
+
+}
+
+.book .card {
+    border-radius: 10px;
+    box-shadow: 0 1px 1px 1px black;
+}
+
+.book .row {
+    margin-top: 30px;
+}
+
+.book form input {
+    padding: 10px;
+    color: black;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    border-radius: 10px;
+    box-shadow: 2px 5px 8px 3px black;
+    margin: 5px;
+}
+
+.book form textarea {
+    border: none;
+    border-radius: 10px;
+    resize: none;
+    height: 200px;
+    box-shadow: 2px 5px 8px 3px black;
+}
+
+.book .submit {
+    width: 160px;
+    font-size: 16px;
+    font-weight: 550;
+    background-color: chartreuse;
+    color: white;
+    margin-top: 10px;
+    transition: 0.5s;
+}
+
+.book .submit:hover {
+    width: 300px;
+}
+
+@media only screen and (max-width: 1400px) {
+    .book {
+        padding: 0;
+    }
+
+    .main-text h1 {
+        padding: 20px;
+    }
+
+    .main-text {
+        margin-top: 20px;
+    }
+
+    .book .card {
+        margin-top: 60px;
+    }
+
+}
+
+@media only screen and (max-width: 1199px) {
+
+
+    .book .card {
+        margin-top: 70px;
+    }
+
+    .main-text {
+        margin-top: 20px;
+    }
+}
+
+@media only screen and (max-width: 995px) {
+
+
+    .book .card {
+        margin-top: 70px;
+
+    }
+
+    .main-text {
+        margin-top: 20px;
+    }
+}
+
+
+.main-txt h1 {
+    text-align: center;
+    box-shadow: 0 1px 1px 1px black;
+    font-weight: 600px;
+    text-shadow: 0 2px 4px rgb(249, 243, 243);
+    background-image: url(https://www.dailymaverick.co.za/wp-content/uploads/2021/10/HEADER-PIC-Dugout-canoe-with-a-small-captainJPG-scaled.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-top: 80px;
+    padding: 20px;
+
+}
+
+.main-txt h1 span {
+    color: chartreuse;
+    text-shadow: 0 2px 4px  rgb(0, 0, 0);
+}
+
+.packages .card{
+    border-radius: 85px 85px 0 0;
+    border: none;
+    margin-top: 30px;
+    box-shadow: 2px 5px 8px 3px black;
+    margin-left: 10px;
+    margin-right: 50px;
+}
+
+
+.packages .card img{
+    border-radius: 85px;
+}
+
+.packages .card .card-body{
+    background: transparent;
+}
+
+.packages .card .card-body h3{
+    font-size: 25px;
+    font-weight: 600px;
+}
+
+.packages .card .card-body p{
+    font-size: 15px;
+}
+
+.checked{
+    color: chartreuse;
+}
+
+.star i{
+    font-size: 15px;
+}
+
+.packages .card .card-body h6{
+    font-size: 20px;
+}
+
+.packages .card .card-body a{
+    padding: 10px;
+    text-decoration: none;
+    background-color: chartreuse;
+    color: white;
+    border-radius: 5px;
+}
+
+.Services{
+    background-color: white;
+    margin-top: 50px;
+}
+
+.Services .card{
+    border: none;
+    cursor: pointer;
+    box-shadow: 2px 5px 8px 3px black;
+    margin-top: 40px;
+    margin-right: 50px;
+    
+}
+
+
+.Services .card i{
+    font-size: 80px;
+    text-align: center;
+    margin-top: 40px;
+    color: chartreuse;
+}
+
+.Services .card .card-body h3{
+    font-weight: 600px;
+    text-align: center;
+}
+
+.Services .card .card-body p{
+    
+    text-align: center;
+}
+
+.gallery{
+    margin-top: 50px;
+}
+
+.gallery .card{
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.gallery .card img{
+    border-radius: 10px;
+    transition: 0.5s;
+    height: 250px;
+}
+
+.gallery .card img:hover{
+    transform: scale(1.1);
+}
+
+
+.about{
+    padding: 50px;
+    margin-top: 50px;
+    background-color: white;
+}
+
+.about .card{
+    border-radius: 10px;
+
+}
+
+.about .card img{
+    border-radius: 10px;
+    
+}
+
+.about h2{
+    font-weight: 600px;
+    letter-spacing: 1px;
+
+}
+
+.about p{
+    font-weight: 500px;
+}
+
+#about-btn{
+    width: 150px;
+    height: 38px;
+    border: none;
+    border-radius: none;
+    background-color: chartreuse;
+    color: white;
+    letter-spacing: 2px;
+    font-weight: 550px;
+    transition: 0.5s ease;
+    cursor: pointer;
+
+}
+
+#about-btn:hover{
+    width: 170px;
+}
+
+#footer{
+    width: 100%;
+    margin-top: 150px;
+    text-align: center;
+    background-color: white;
+}
+
+#footer h1{
+    font-weight: 600px;
+    padding-top: 30px;
+    text-shadow: 0 1px 1px 1px black;
+}
+
+#footer h1 span{
+    color: chartreuse;
+}
+
+.social-links i{
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+    background: chartreuse;
+    color: white;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+.social-links i:hover{
+    background-color: black;
+}
+
+
+
+
+
+p {
+    color:black;
+  }
+
+  
+  h2 {
+    font-weight:bold;
+    margin-bottom:40px;
+    padding-top:40px;
+    color:#fff;
+  }
+  
+  
+  h2 {
+      margin-bottom:25px;
+      padding-top:25px;
+      font-size:24px;
+    }
+  
+  
+  .intro {
+    font-size:16px;
+    max-width:500px;
+    margin:0 auto;
+  }
+
+  .intro p {
+    margin-bottom:0;
+  }
+  
+  .people {
+    padding:50px 0;
+    cursor: pointer;
+  }
+
+  .item {
+    margin-bottom:30px;
+  }
+  
+  .item .box {
+    text-align:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+    height:280px;
+    position:relative;
+    overflow:hidden;
+  }
+  
+  .item .cover {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-color:rgba(31,148,255,0.75);
+    transition:opacity 0.15s ease-in;
+    opacity:0;
+    padding-top:80px;
+    color:#fff;
+    text-shadow:1px 1px 1px rgba(0,0,0,0.15);
+  }
+  
+  .item:hover .cover {
+    opacity:1;
+  }
+
+  .box style img{
+    width: 100%;
+    height: 100px;
+  }
+  
+  .item .name {
+    font-weight:bold;
+    margin-bottom:8px;
+  }
+  
+  .item .title {
+    text-transform:uppercase;
+    font-weight:bold;
+    color:#bbd8fb;
+    letter-spacing:2px;
+    font-size:13px;
+    margin-bottom:20px;
+  }
+  
+  .social {
+    font-size:18px;
+  }
+   
+  .social a {
+    color:inherit;
+    margin:0 10px;
+    display:inline-block;
+    opacity:0.7;
+  }
+  .social a:hover {
+    opacity:1;
+  }
+  
+
+.container-card .card-container
+{
+    max-width: 300px;
+    height: 215px;
+    margin: 30px 10px;
+    padding: 20px 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+    transition: 0.3s ease-in-out;
+}
+
+.container-card .card-container:hover
+{
+    height: 450px;
+}
+
+.container-card .card-container .imgContainer
+{
+    position: relative;
+    width:250px;
+    height:250px;
+    top:-50px;
+    left:10px;
+    z-index: 1;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+
+.container-card .card-container .imgContainer img
+{
+    max-width: 100%;
+    border-radius: 4px;
+}
+
+.container-card .card-container .content-card
+{
+    position: relative;
+    margin-top: -140px;
+    padding: 10px 15px;
+    text-align: center;
+    color:#111;
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.3s ease-in-out;
+}
+
+.container-card .card-container:hover .content-card
+{
+    visibility: visible;
+    opacity: 1;
+    margin-top: -40px;
+    transition-delay: 0.3s;
+}
+
+
+.content-card h2{
+    color: chartreuse;
+}
+
+
+    .container-card .card-container .imgContainer{
+        left: -2px;
+    }
